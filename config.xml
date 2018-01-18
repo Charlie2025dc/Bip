@@ -5,10 +5,10 @@
    ID ="com.phonegap.example1"
    version="1.0.0">
    
-   <name> app DATOSALUMNOS </name>
+   <name> Sonidos </name>
    
    <description> 
-      Aplicacion que muestra los DATOS del alumno
+      Sonidos y/o Alarmas.
    </description>
    
    <author herf="https://build.phonegap.com" email="caralbap2000@gmail.com">

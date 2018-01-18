@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Primera Aplicacion</title>
+<title>Sonidos/Alarma</title>
 
   <!--grupo CSS-->
   <link rel="stylesheet"href="css/jquery.mobile-1.4.5.min.css"
@@ -13,7 +13,74 @@
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/acciones.js"></script>
   <script src="phonegap.js"></script>
-  
+  <script> 
+function audio (e) { 
+var reproducir = new Audio();
+reproducir.src = e;
+reproducir.play();
+}
+window.addEventListener("load",function() {
+	document.querySelectorAll("body button")[0].addEventListener("click",function() {
+		audio("alarmas/bip.mp3")
+    },false);
+	document.querySelectorAll("body button")[1].addEventListener("click",function() {
+		audio("alarmas/golpe.mp3")
+    },false);
+	document.querySelectorAll("body button")[2].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[3].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[4].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[5].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[6].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[7].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[8].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[9].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[10].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[11].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[12].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[13].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[14].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[15].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[16].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[17].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[18].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	document.querySelectorAll("body button")[19].addEventListener("click",function() {
+		audio("alarmas/bip.mpeg")
+    },false);
+	},false);  </script>
   
 </head>
 
@@ -21,255 +88,151 @@
 
  <div data-role="page" id="Principal" data-theme="a">
   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"   data-back-btn-theme="b">
-      <h1> Diccionario para sordomudos </h1>
-      </div>
+      <h1 align="center">Sonidos/Alarmas </h1>
+</div>
       <div data-role="main" class="ui-content" align="center">
        <div style="width:40%">
 
        <p>&nbsp;</p>
      <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
-      <li class="ui-first-child ui-last-child">
-    <audio id="player" src="alarmas/bip.mpeg"> </audio>
- 
-<a id="button" title="button">Reproducir Sonido</a>​
-</li>
- <li class="ui-first-child ui-last-child">
+  
  
       
-<a href="#" data-role="button" id="Hola">
+<button>
          
   <h2>Hola</h2>
          
  
-      </a>
+      </button>
   <br>
 
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Gracias">
+<button>
    
        <h2>Gracias</h2>
           
    
-    </a>
+    </button>
   <br>
-   </li>
-
-  
-
-     <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Nogracias">
+  <button>
          
   <h2>No, gracias</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Hastaluego">
+<button>
    
        <h2>Hasta luego</h2>
           
    
-    </a>
+    </button>
   <br>
-   </li>
-
-  
-
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Si">
-         
+   <button>
   <h2>Sí</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="No">
+ <button>
    
        <h2>No</h2>
           
    
-    </a>
+    </button>
   <br>
-   </li>
-
-  
-
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Ayuda">
-         
+  <button>
   <h2>Ayuda</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Risas">
-   
+ <button>
        <h2>*Risas*</h2>
           
    
-    </a>
+    </button>
   <br>
-   </li>
-
-  
-
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Losiento">
+  <button> 
          
   <h2>Lo siento</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Descuida">
-   
+ <button>
        <h2>Descuida</h2>
           
    
-    </a>
+    </button>
   <br>
-   </li>
-
-  
-
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Disculpa">
-      <br>   
+   <button>
   <h2>Disculpa</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Buenosdias">
-   
+ <button>
        <h2>Buenos días</h2>
           
    
-    </a>
-  <br>
-   </li>
+    </button>
+      <br>
 
   
 
-     <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Buenastardes">
+     <button>
          
   <h2>Buenas tardes</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Buenasnoches">
+  <button>
    
        <h2>Buenas noches</h2>
           
-   
-    </a>
+   </button>
+    
   <br>
-   </li>
-
-  
-
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Quetevayabien">
-         
+  <button>
   <h2>Que te vaya bien</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Cuidate">
-   
+ <button>
        <h2>Cuidate</h2>
           
    
-    </a>
+    </button>
   <br>
    </li>
 
   
 
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Sigue">
-         
+<button>
   <h2>Sigue</h2>
          
  
-      </a>
-  <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Continua">
+      </button>  <br>
+ <button>
    
        <h2>Continua</h2>
           
-   
-    </a>
+   </button>
+    
   <br>
-   </li>
-
-  
-
- <li class="ui-first-child ui-last-child">
-      
-<a href="#" data-role="button" id="Detente">
-         
+   <button>
   <h2>Detente</h2>
          
  
-      </a>
+      </button>
   <br>
-  </li>
- 
-    <li class="ui-first-child ui-last-child">
-   
-    <a href="#" data-role="button" id="Venrapido">
-   
+ <button>
        <h2>Ven rapido</h2>
           
    
-    </a>
+    </button>
   
    </li>
 
@@ -282,7 +245,7 @@
 
 <div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
       <div>
-         <img src="images/phone-icon.png" width="10%" height="8%">
+         
       </div>
       <div>
          <h4> Prototipo </h4>
