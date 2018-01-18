@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet"href="css/jquery.mobile-1.4.5.min.css"
+  <!--<link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css"
+  <link rel="stylesheet"href="css/jquery.mobile.structure-1.4.5.min.css"
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  
+  
+</head>
+
+<body>
+
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"   data-back-btn-theme="b">
+      <h1> Diccionario para sordomudos </h1>
+      </div>
+      <div data-role="main" class="ui-content" align="center">
+       <div style="width:40%">
+
+       <p>&nbsp;</p>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+    <audio id="player" src="alarmas/bip.mpeg"> </audio>
+ 
+<a id="button" title="button">Reproducir Sonido</a>​
+</li>
+ <li class="ui-first-child ui-last-child">
+ 
+      
+<a href="#" data-role="button" id="Hola">
+         
+  <h2>Hola</h2>
+         
+ 
+      </a>
+  <br>
+
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Gracias">
+   
+       <h2>Gracias</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+     <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Nogracias">
+         
+  <h2>No, gracias</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Hastaluego">
+   
+       <h2>Hasta luego</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Si">
+         
+  <h2>Sí</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="No">
+   
+       <h2>No</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Ayuda">
+         
+  <h2>Ayuda</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Risas">
+   
+       <h2>*Risas*</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Losiento">
+         
+  <h2>Lo siento</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Descuida">
+   
+       <h2>Descuida</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Disculpa">
+      <br>   
+  <h2>Disculpa</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Buenosdias">
+   
+       <h2>Buenos días</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+     <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Buenastardes">
+         
+  <h2>Buenas tardes</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Buenasnoches">
+   
+       <h2>Buenas noches</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Quetevayabien">
+         
+  <h2>Que te vaya bien</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Cuidate">
+   
+       <h2>Cuidate</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Sigue">
+         
+  <h2>Sigue</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Continua">
+   
+       <h2>Continua</h2>
+          
+   
+    </a>
+  <br>
+   </li>
+
+  
+
+ <li class="ui-first-child ui-last-child">
+      
+<a href="#" data-role="button" id="Detente">
+         
+  <h2>Detente</h2>
+         
+ 
+      </a>
+  <br>
+  </li>
+ 
+    <li class="ui-first-child ui-last-child">
+   
+    <a href="#" data-role="button" id="Venrapido">
+   
+       <h2>Ven rapido</h2>
+          
+   
+    </a>
+  
+   </li>
+
+
+ </ul>
+
+
+<hr>
+
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+      <div>
+         <img src="images/phone-icon.png" width="10%" height="8%">
+      </div>
+      <div>
+         <h4> Prototipo </h4>
+         
+      </div>        
+            </div>
+            
+                
+</body>
+</html>
